@@ -268,3 +268,4 @@ __pycache__/
 
 obj
 .DS_Store
+.vscode
