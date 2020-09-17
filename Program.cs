@@ -9,15 +9,15 @@ namespace dot_net_core_store_and_read_password_from_azure_key_vault
         static void Main(string[] args)
         {
             // To get URL of your Key Vault, run
-            // "az keyvault show -n TestAppVault" and look for "vaultUrl" in the output
-            var keyVaultUrl = "https://testappvault.vault.azure.net/";
+            // "az keyvault show -n <your-key-vault-name>" and look for "vaultUrl" in the output
+            var keyVaultUrl = "https://<your-key-vault-name>.vault.azure.net/";
 
             // Two ways to authenticate, pick one only.
             // 1. Supply Tennnt Id, Client Id and a Secret directly
             // 2. Use Environment Variables that contain that information
 
-            // To obtain values for either of these steps, refer to the output of
-            // command `az ad sp create-for-rbac -n YourAppName --skip-assignment`            
+            // To obtain values for either of these steps, refer to the output ofcommand
+            // `az ad sp create-for-rbac -n <your-app-name> --skip-assignment`
 
             // 1. Replace the values below with appropriate data and uncomment
             /*
@@ -36,7 +36,7 @@ namespace dot_net_core_store_and_read_password_from_azure_key_vault
 
             var client = new SecretClient(vaultUri: new Uri(keyVaultUrl), credential);
 
-            KeyVaultSecret secret = client.GetSecret("DbPassword");
+            KeyVaultSecret secret = client.GetSecret("<your-secret-name>");
 
             Console.WriteLine($"{secret.Name}: {secret.Value}");
         }

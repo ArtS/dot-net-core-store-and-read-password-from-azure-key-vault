@@ -1,9 +1,10 @@
 
-This is a sample project to go with the article "[][1]"
+This is a sample project to go with the article "[How to securely store and retrieve sensitive info in .NET Core apps with Azure Key Vault][1]"
 
 
-To get it working locally, download / `git clone` the code, then from the code folder run the
-followning:
+Make sure to follow Azure account setup & login to get this sample code working correctly.
+
+Download / `git clone` the code, then from the code folder run the followning:
 
 ```
 dotnet restore
@@ -28,4 +29,4 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FO
 OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[1]:https://nimblegecko.com/
+[1]:https://nimblegecko.com/how-to-securely-store-and-retrieve-passwords-in-dot-net-core-apps-with-azure-key-vault/
